@@ -20,9 +20,21 @@ ng g c core/pie
     metemos cabeza en core(quitamos la llamada desde app.module y emportamos desde core.module)
 ng g c core/logo
     podemos llamar a una variable desde un src envolviendolo {src}
+
 ng g c core/menu
     exportamos
-
+ng g m inicio
+ng g c inicio/inicio --flat -it -is
+    crea componente sin hacer una carpeta y con htlm y css dentro
+    app.modules->import
+    para hacer routing, desde app-routing.modules añades a-routes
+    core.module tiene que importar los routes para poder usarlos
+    lazy loading: carga lo indispensable y los lazy cuando sea necesario
+ng g m catalogo --routing
+ng g c catalogo/catalogo --flat -it -is
+    añades lazy path a app.modules con path al modulo hijo y nombre del modulo hijo
+    exportas desde modules del hijo el componente fuera
+    en el routing del hijo añades a-route-eager
 
 
 
