@@ -1,0 +1,28 @@
+ANGULAR::
+
+npm install --g @angular/cli
+ng new --routing --prefix bbl base-angular
+ng serve
+npm install bootstrap
+
+
+ng g m core
+    Añadir modulo core en app.module
+ng g c cabeza
+    Añadir onDestroy como implement, y su metodo (si queremos)
+    Inserto un bbl-cabeza en el app.component.html
+    En el componente principal SOLO hay llamadas al resto de componentes
+ng g c core/pie
+    Hay que exportarlo desde core.module para que se pueda encontrar desde app.component
+    b4-grid-default dentro de pie.component.html
+    creamos un par de variables en pie.component.ts
+    Desde html se llama a esas variables con {{variable}}
+    metemos cabeza en core(quitamos la llamada desde app.module y emportamos desde core.module)
+ng g c core/logo
+    podemos llamar a una variable desde un src envolviendolo {src}
+ng g c core/menu
+    exportamos
+
+
+
+
