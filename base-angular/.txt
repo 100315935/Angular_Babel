@@ -19,7 +19,7 @@ ng g c core/pie
     Desde html se llama a esas variables con {{variable}}
     metemos cabeza en core(quitamos la llamada desde app.module y emportamos desde core.module)
 ng g c core/logo
-    podemos llamar a una variable desde un src envolviendolo {src}
+    podemos llamar a una variable desde un src envolviendolo [src]
 
 ng g c core/menu
     exportamos

@@ -1,0 +1,34 @@
+<div class="card">
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+      <h4 class="card-title">Padre</h4>
+      <div class="form-group">
+          <label for="nombre">Mi hijo se llama {{sNombre}}</label>
+          <input type="text" class="form-control" name="nombre" id="nombre" placeholder="" [(ngModel)]="sNombre">
+        </div>
+      </div>
+      <bbl-hijo [nombre]="sNombre" (respuesta)="respuestaHijo($event)" ></bbl-hijo>
+    </div>
+    <div class="card-footer text-muted">
+    </div>
+
+
+<!-- <div class="card">
+  <div class="card-header">
+    Binding
+  </div>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="nombre">Dime tu nombre</label>
+      <input type="text" class="form-control" name="nombre" id="nombre" placeholder="" [(ngModel)]="sNombre">
+    </div>
+    <button type="button" class="btn btn-dark" (click)="btnBorrar()" >Borrar</button>
+  </div>
+  <div class="card-footer text-muted">
+    <p>Hola {{sNombre.toUpperCase()}}</p>
+    <p>23948*939= {{23948*939}}</p>
+    <pre>{{user|json}}</pre>
+
+  </div>
+</div> -->

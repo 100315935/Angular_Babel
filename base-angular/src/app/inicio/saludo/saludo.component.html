@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="card-header">
+    Binding
+  </div>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="nombre">Dime tu nombre</label>
+      <input type="text" class="form-control" name="nombre" id="nombre" placeholder="" [(ngModel)]="sNombre">
+    </div>
+    <button type="button" class="btn btn-dark" (click)="btnBorrar()" >Borrar</button>
+  </div>
+  <div class="card-footer text-muted">
+    <p>Hola {{sNombre.toUpperCase()}}</p>
+    <p>23948*939= {{23948*939}}</p>
+    <pre>{{user|json}}</pre>
+
+  </div>
+</div>
+
+<!-- Lenguaje de Templates de Angular
+{{expresion}}
+[] operador de propiedades
+()operador de eventos
+[()] operador de doble binding o "banana in a box"
+#  operador de expresiones locales
+-->
