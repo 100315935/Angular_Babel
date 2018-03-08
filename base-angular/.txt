@@ -36,5 +36,11 @@ ng g c catalogo/catalogo --flat -it -is
     exportas desde modules del hijo el componente fuera
     en el routing del hijo añades a-route-eager
 
+ng g m agenda --routing
+ng g c agenda/agenda --flat
+ng g c agenda/tareas
+      1--Ir a menu y añadirlo
+      2.ir a app routing y añadir la ruta
+
 
 
