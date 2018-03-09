@@ -8,11 +8,13 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { InicioModule } from './inicio/inicio.module';
 import { AboutModule } from './about/about.module';
+import { TruncarPipe } from './pipes/truncar.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    TruncarPipe,
   ],
   imports: [
     BrowserModule,

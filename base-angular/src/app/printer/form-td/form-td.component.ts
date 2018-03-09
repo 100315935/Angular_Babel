@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Printers, Dptos } from '../../modelos/data';
 import { PrinterIf, DptoIf } from '../../modelos/master';
 import { OrderprintIf } from '../../modelos/orderprint';
@@ -7,16 +7,16 @@ import { OrderprintIf } from '../../modelos/orderprint';
 @Component({
   selector: 'bbl-form-td',
   templateUrl: './form-td.component.html',
-  styleUrls: ['./form-td.component.css']
+  styleUrls: ['./form-td.component.css'],
 })
-
-@ViewChild('formPrinter')
 
 export class FormTdComponent implements OnInit {
 
   aPrinters: Array<PrinterIf>;
   aDptos: Array<DptoIf>;
   orderPrint: OrderprintIf;
+
+@ViewChild('formPrinter') formulario: any;
 
   constructor() { }
 
@@ -43,7 +43,7 @@ export class FormTdComponent implements OnInit {
   }
 
   borrar() {
-   // this.formulario reset;
+   this.formulario.reset();
   }
 
 }

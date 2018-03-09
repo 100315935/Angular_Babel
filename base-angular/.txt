@@ -40,7 +40,20 @@ ng g m agenda --routing
 ng g c agenda/agenda --flat
 ng g c agenda/tareas
       1--Ir a menu y añadirlo
-      2.ir a app routing y añadir la ruta
+      2.ir a app routing y añadir la ruta lazy
+      3.ir a agenda.module y exportar el componente
+      4.ir a agenda routing y añadir la ruta eager
+
+SERVICIOS
+ng g s servicios/books
+desde libros.module: providers [bookService] (clase autogenerada en book.module)
+en book.module añades los metodos que quieras usar en tu servicio.
+hacer lo de siempre para padres e hijos componentes
+en libros-mock.component llamar a BookService desde constructor
+
+ASINCRONIA
+se pueden usar callbacks
+USAR PROMESAS en la generacion del mock y en
 
 
 
